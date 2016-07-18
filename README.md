@@ -35,10 +35,11 @@ So, here you are, you’re done writing your app and want it secure against stea
 
 ## How to use it ?
 So you still want to ? OK, welcome aboard. 
+
 1. `git clone` the repo matching the language you’re using :
 	* Plain C
-	* Objective-C
-	* Swift [upcoming]
+	* Objective-C : https://github.com/perfaram/fireprime-objc
+	* Swift [upcoming, in the meantime just use the ObjC version]
 	* You name it. Just write an implementation and send me a PR ! Specifications to generate FirePrime-compatible licenses are here : [https://github.com/perfaram/fireprime-protos]
 2. Follow the instructions given in each repo. As much as possible, I recommend to keep FirePrime’s code as a git module (for easy updates) and not to use dynamic linking (that is, compile FirePrime as a static library, not a shared one). See above if you don’t understand why.
 3. Then read above to know what best practices you should follow. Chances are, otherwise you’ll end with just one call to FirePrime’s `verifyLicense`, which adds virtually no security against crackers.
